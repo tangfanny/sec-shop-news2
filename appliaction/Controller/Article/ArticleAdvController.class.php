@@ -26,7 +26,7 @@ class ArticleAdvController extends AdminBaseController {
 				$order['id'] = 'DESC';
 			}
 			$pagenum = isset($_POST['page']) ? intval($_POST['page']) : 1;
-			$rowsnum=isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
+			$rowsnum = isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
 			$data['total'] = $this->db->where($sqlmap)->count();	//计算总数
 			$data['rows'] = $this->db
 					->field(true)
