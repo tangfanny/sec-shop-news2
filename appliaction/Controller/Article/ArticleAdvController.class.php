@@ -37,7 +37,7 @@ class ArticleAdvController extends AdminBaseController {
 			foreach ($data['rows'] as $key => $value) {
 				$data['rows'][$key]['position_name'] = M('advPosition')->where(array('id'=>$value['position_id']))->getField('name');
 			}
-			foreach ($data["rows"] as $key=>$value){
+			foreach ($data["rows"] as $key => $value){
 				$data["rows"][$key]["class_name"] = $this->goods_category->where(array("id"=>$value["class_id"]))->getField("name");
 			}
 			if (!$data['rows']) $data['rows'] = array();
