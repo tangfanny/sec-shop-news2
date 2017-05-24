@@ -95,7 +95,7 @@ class ArticleController extends AdminBaseController {
 	 */
 	protected function save(){
 		$id = $_POST['id'];
-		
+
 		//处理
 		if (isset($id) && $id) {
 			if ($this->db->create()) {
@@ -106,6 +106,7 @@ class ArticleController extends AdminBaseController {
 				$this->error($this->db->getError());
 			}
 		} else {
+			
 			if ($this->db->create()) {
 				$nid = $this->db->add();
 				showmessage("添加文章成功", U('lists'),1);
