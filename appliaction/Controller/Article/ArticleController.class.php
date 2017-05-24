@@ -3,7 +3,7 @@
 class ArticleController extends AdminBaseController {
 
 	/*
-	 *	  自动执行
+	 *	 自动执行
 	 */
 	public function _initialize() {
 		parent::_initialize();
