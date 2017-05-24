@@ -12,7 +12,7 @@ class ArticleController extends AdminBaseController {
 	}
 
 	/*
-	 *	  文章列表
+	 * 文章列表
 	 */
 	public function lists() {
 		if(IS_POST){
