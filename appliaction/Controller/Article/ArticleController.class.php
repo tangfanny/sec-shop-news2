@@ -74,7 +74,7 @@ class ArticleController extends AdminBaseController {
 					$this->db->where('id='.$id)->save($data);
 					showmessage('恭喜你，成功改变状态！',U('lists'),1); 
 					exit(); 
-			}
+				}
 				//是否置顶
 				if($opt == 'ajax_top' && $id ){
 					unset($where);
@@ -108,7 +108,7 @@ class ArticleController extends AdminBaseController {
 		} else {
 
 			if ($this->db->create()) {
-				
+
 				$nid = $this->db->add();
 				showmessage("添加文章成功", U('lists'),1);
 			} else {
