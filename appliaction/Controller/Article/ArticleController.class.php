@@ -106,8 +106,9 @@ class ArticleController extends AdminBaseController {
 				$this->error($this->db->getError());
 			}
 		} else {
-			
+
 			if ($this->db->create()) {
+				
 				$nid = $this->db->add();
 				showmessage("添加文章成功", U('lists'),1);
 			} else {
