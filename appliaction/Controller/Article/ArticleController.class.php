@@ -95,6 +95,7 @@ class ArticleController extends AdminBaseController {
 	 */
 	protected function save(){
 		$id = $_POST['id'];
+		
 		//处理
 		if (isset($id) && $id) {
 			if ($this->db->create()) {
