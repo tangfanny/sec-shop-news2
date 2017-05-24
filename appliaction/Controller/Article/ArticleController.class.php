@@ -15,6 +15,7 @@ class ArticleController extends AdminBaseController {
 	 * 文章列表
 	 */
 	public function lists() {
+		
 		if(IS_POST){
 			$sqlmap = array();
 			$_order = isset($_POST['order']) ? ($_POST['order']) : NULL;
