@@ -139,7 +139,7 @@ class ArticleAdvController extends AdminBaseController {
 				showmessage($this->db->getError(),U('ArticleAdv/lists'),0);
 			}
 		}
-//		编辑
+		//编辑
 		if(isset($opt) && $opt=='edit'){
 			if($this->db->create()){
 				$this->db->save();
