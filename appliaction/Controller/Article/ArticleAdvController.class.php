@@ -119,7 +119,6 @@ class ArticleAdvController extends AdminBaseController {
 			$_POST["web_url"] = "" ;
 
 		}
-
 		if($type=='4'){
 			$_POST["goods_name"]=$_POST["goods_name"];
 			$_POST["goods_id"]=$_POST["goods_id"];
