@@ -91,7 +91,7 @@ class ArticleController extends AdminBaseController {
 	}
 
 	/*
-	 *	  处理数据111111
+	 *	  处理数据11111221
 	 */
 	protected function save(){
 		$id = $_POST['id'];
