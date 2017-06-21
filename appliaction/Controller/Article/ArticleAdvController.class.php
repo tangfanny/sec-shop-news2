@@ -131,7 +131,7 @@ class ArticleAdvController extends AdminBaseController {
 		$_POST = daddslashes($_POST);
 
 		//添加
-		if(isset($opt) && $opt=='add'){
+		if(isset($opt) && $opt == 'add'){
 			if($this->db->create()){
 				$this->db->add();
 				showmessage('添加广告成功',U('ArticleAdv/lists'),1);
