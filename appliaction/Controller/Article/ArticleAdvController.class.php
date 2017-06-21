@@ -127,7 +127,7 @@ class ArticleAdvController extends AdminBaseController {
 		}
 		$_POST['content'] = htmlspecialchars_decode($content);
 		$_POST['starttime'] = strtotime(I('starttime'));
-		$_POST['endtime']= strtotime(I('endtime'));
+		$_POST['endtime'] = strtotime(I('endtime'));
 		$_POST = daddslashes($_POST);
 
 		//添加
