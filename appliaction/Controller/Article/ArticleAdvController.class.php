@@ -125,7 +125,7 @@ class ArticleAdvController extends AdminBaseController {
 			$_POST["link"]="";
 			$content="";
 		}
-		$_POST['content']=htmlspecialchars_decode($content);
+		$_POST['content'] = htmlspecialchars_decode($content);
 		$_POST['starttime']=strtotime(I('starttime'));
 		$_POST['endtime']= strtotime(I('endtime'));
 		$_POST = daddslashes($_POST);
@@ -139,7 +139,7 @@ class ArticleAdvController extends AdminBaseController {
 				showmessage($this->db->getError(),U('ArticleAdv/lists'),0);
 			}
 		}
-		
+
 		//编辑
 		if(isset($opt) && $opt=='edit'){
 			if($this->db->create()){
