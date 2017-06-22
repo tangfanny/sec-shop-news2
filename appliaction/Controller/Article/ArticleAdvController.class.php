@@ -125,7 +125,6 @@ class ArticleAdvController extends AdminBaseController {
 		$_POST['starttime'] = strtotime(I('starttime'));
 		$_POST['endtime'] = strtotime(I('endtime'));
 		$_POST = daddslashes($_POST);
-
 		//添加
 		if(isset($opt) && $opt == 'add'){
 			if($this->db->create()){
