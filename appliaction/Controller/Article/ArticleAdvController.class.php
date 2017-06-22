@@ -93,7 +93,6 @@ class ArticleAdvController extends AdminBaseController {
 	protected function save(){
 		$opt = I('opt');
 		$type = I('type',1,'intval');
-
 		if($type=='1') {
 			$content = I('img');
 			$_POST['link']=$_POST['ilink'];
