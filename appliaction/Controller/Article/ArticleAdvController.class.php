@@ -136,7 +136,7 @@ class ArticleAdvController extends AdminBaseController {
 		}
 
 		//编辑
-		if(isset($opt) && $opt=='edit'){
+		if(isset($opt) && $opt == 'edit'){
 			if($this->db->create()){
 				$this->db->save();
 				showmessage('编辑广告成功',U('ArticleAdv/lists'),1);
