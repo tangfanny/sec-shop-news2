@@ -19,7 +19,7 @@ class ArticleAdvController extends AdminBaseController {
 				$sqlmap['position_id'] = $pos_id;
 			}
 			$_order=isset($_POST['order']) ? ($_POST['order']) : NULL;
-			$_sort=isset($_POST['sort']) ? ($_POST['sort']) : NULL;
+			$_sort = isset($_POST['sort']) ? ($_POST['sort']) : NULL;
 			if($_order && $_sort){
 				$order[$_sort] = $_order;
 			}else{
