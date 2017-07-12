@@ -1,5 +1,6 @@
 <?php
-	/**
+	/*
+	 *
 	 * 广告列表
 	 */
 class ArticleAdvController extends AdminBaseController {
