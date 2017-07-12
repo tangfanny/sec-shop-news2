@@ -7,7 +7,7 @@ class ArticleAdvController extends AdminBaseController {
 	public function _initialize() {
 		parent::_initialize();
 		$this->db = model('Adv');
-		$this->goods_category=model("goods_category");
+		$this->goods_category = model("goods_category");
 		$this->type_text=array(1=>'图片',2=>'文字',3=>'代码',4=>'商品');
 	}
 
