@@ -40,7 +40,7 @@ class ArticleAdvController extends AdminBaseController {
 			foreach ($data["rows"] as $key=>$value){
 				$data["rows"][$key]["class_name"] = $this->goods_category->where(array("id"=>$value["class_id"]))->getField("name");
 			}
-			if (!$data['rows']) $data['rows']=array();
+			if (!$data['rows']) $data['rows'] = array();
 				echo json_encode($data);
 		}else{
 			include $this->admin_tpl('article_adv_lists');
@@ -60,7 +60,7 @@ class ArticleAdvController extends AdminBaseController {
 		}else{
 			if(isset($opt) && $opt){
 				//添加
-				if($opt=='add') {
+				if($opt == 'add') {
 					$position_id = I('pos_id');
 					$adv_position = M('adv_position')->where('id='.$position_id)->Find();
 					include $this->admin_tpl('article_adv_update');
