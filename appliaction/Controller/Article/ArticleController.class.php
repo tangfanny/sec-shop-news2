@@ -58,7 +58,6 @@ class ArticleController extends AdminBaseController {
 				//分类列表
 				$cate = model('ArticleCategory');
 				$data = $cate->order('parent_id ASC,sort ASC,id ASC')->select();
-
 				$catInfo = getTree($data, 0);
 				$catTree = $cate->formatCat($catInfo);
 
