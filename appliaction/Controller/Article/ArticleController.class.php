@@ -37,7 +37,7 @@ class ArticleController extends AdminBaseController {
 		}else{
 			include $this->admin_tpl('article_list');
 		}
-		}
+	}
 
 /**
  *	  添加修改页
