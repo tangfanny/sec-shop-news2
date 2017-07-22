@@ -13,7 +13,8 @@ class ArticleController extends AdminBaseController {
 		libfile('form');
 	}
 
-	/**
+	/*
+	 *
 	 *	  文章列表
 	 */
 	public function lists() {
