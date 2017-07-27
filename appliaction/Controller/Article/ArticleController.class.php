@@ -64,7 +64,7 @@ class ArticleController extends AdminBaseController {
 				//编辑
 				if($opt == 'edit' && $id>0){
 					$info = $this->db->where('id='.$id)->find();
-					$this->pid=$info['parent_id'];
+					$this->pid = $info['parent_id'];
 					$this->info=$info;
 				}
 				//删除
