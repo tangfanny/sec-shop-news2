@@ -62,8 +62,8 @@ class ArticleController extends AdminBaseController {
 				$catTree = $cate->formatCat($catInfo);
 
 				//编辑
-				if($opt=='edit' && $id>0){
-					$info=$this->db->where('id='.$id)->find();
+				if($opt == 'edit' && $id>0){
+					$info = $this->db->where('id='.$id)->find();
 					$this->pid=$info['parent_id'];
 					$this->info=$info;
 				}
