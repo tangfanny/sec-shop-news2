@@ -78,7 +78,7 @@ class ArticleController extends AdminBaseController {
 				//修改状态
 				if($opt == 'ajax_status' && $id ){
 					unset($where);
-					$data['status']=array('exp',' 1-status ');;
+					$data['status'] = array('exp',' 1-status ');;
 					$this->db->where('id='.$id)->save($data);
 					showmessage('恭喜你，成功改变状态！',U('lists'),1); 
 					exit(); 
