@@ -25,7 +25,7 @@ class ArticleController extends AdminBaseController {
 				$order['id'] = 'DESC';
 			}
 			$pagenum = isset($_POST['page']) ? intval($_POST['page']) : 1;
-			$rowsnum=isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
+			$rowsnum = isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
 			$join = 'LEFT JOIN __ARTICLE_CATEGORY__ AS c ON a.category_id = c.id';
 			$data['total'] = $this->db->count();	//计算总数 
 			$data['rows']=$this->db->alias('a')->field('a.*,c.name as catename')->join($join)->limit(($pagenum-1)*$rowsnum.','.$rowsnum)->order($order)->select();
