@@ -12,7 +12,6 @@ class ArticleController extends AdminBaseController {
 	}
 
 	/*
-	 *
 	 *	  文章列表
 	 */
 	public function lists() {
