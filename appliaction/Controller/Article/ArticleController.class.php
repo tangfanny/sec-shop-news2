@@ -90,7 +90,7 @@ class ArticleController extends AdminBaseController {
 					$this->db->where('id='.$id)->save($data);
 					showmessage('恭喜你，成功改变状态！',U('lists'),1); 
 					exit(); 
-		}
+			}
 				include $this->admin_tpl("article_update");
 			} else {
 				showmessage('参数错误,请联系管理员!');
