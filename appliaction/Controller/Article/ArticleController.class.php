@@ -94,7 +94,7 @@ class ArticleController extends AdminBaseController {
 				include $this->admin_tpl("article_update");
 			} else {
 				showmessage('参数错误,请联系管理员!');
-	}
+			}
 		}
 	}
 
