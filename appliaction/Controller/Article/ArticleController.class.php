@@ -36,7 +36,7 @@ class ArticleController extends AdminBaseController {
 		}
 	}
 
-	/**
+	/*
 	 *	  添加修改页
 	 */
 	public function update() {
