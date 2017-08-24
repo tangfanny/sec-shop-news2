@@ -41,7 +41,6 @@ class ArticleController extends AdminBaseController {
 
 	/**
 	 *	  添加修改页
-	 *	  tel:400-600-2042
 	 */
 	public function update() {
 		$validform = TRUE;
