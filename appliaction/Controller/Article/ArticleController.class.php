@@ -90,7 +90,7 @@ class ArticleController extends AdminBaseController {
 		}
 	}
 
-	/**
+	/*
 	 *	  处理数据
 	 */
 	protected function save(){
