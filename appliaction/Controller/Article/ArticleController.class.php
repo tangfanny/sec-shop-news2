@@ -86,7 +86,7 @@ class ArticleController extends AdminBaseController {
 				//是否置顶
 				if($opt == 'ajax_top' && $id ){
 					unset($where);
-					$data['top']=array('exp',' 1-top ');;
+					$data['top'] = array('exp',' 1-top ');;
 					$this->db->where('id='.$id)->save($data);
 					showmessage('恭喜你，成功改变状态！',U('lists'),1); 
 					exit(); 
