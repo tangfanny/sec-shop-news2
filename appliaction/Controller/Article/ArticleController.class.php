@@ -107,7 +107,7 @@ class ArticleController extends AdminBaseController {
 		if (isset($id) && $id) {
 			if ($this->db->create()) {
 				$this->db->save();
-				$nid=$id;
+				$nid = $id;
 				showmessage("修改文章成功", U('lists'),1);
 			} else {
 				$this->error($this->db->getError());
