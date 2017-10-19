@@ -39,7 +39,7 @@ class ArticleAppButtonController extends AdminBaseController{
             include $this->admin_tpl('article_app_button_lists');
         }
     }
-    
+
     /**
      * 添加修改页
      */
@@ -69,6 +69,7 @@ class ArticleAppButtonController extends AdminBaseController{
             }
         }
     }
+    
     /**
      * 处理数据
      */
