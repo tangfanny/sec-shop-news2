@@ -69,7 +69,7 @@ class ArticleAppButtonController extends AdminBaseController{
             }
         }
     }
-    
+
     /**
      * 处理数据
      */
@@ -112,6 +112,7 @@ class ArticleAppButtonController extends AdminBaseController{
            showmessage('非法操作，请联系管理员！'); 
         }
     }
+    
     /**
      * 改变状态
      */
