@@ -1,16 +1,15 @@
 <?php
-/**
- * 按钮列表
- */
+    /**
+     * 按钮列表
+     */
 class ArticleAppButtonController extends AdminBaseController{
 
     public function _initialize() {
         parent::_initialize();
         $this->db= model('Article_app_button');
     }
-
+    
     public function lists(){
-
         $id = $_GET['id'];
         if(IS_POST){
             $sqlmap = array();
