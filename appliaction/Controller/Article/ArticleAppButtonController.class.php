@@ -45,21 +45,21 @@ class ArticleAppButtonController extends AdminBaseController{
      */
     public function update(){
         $validform = TRUE;
-        $opt=I("opt");
-        $id=I("id",0);
+        $opt = I("opt");
+        $id = I("id",0);
         if(IS_POST){
             $this->save();
         }else{
             if(isset($opt) && $opt){
                 //编辑
-                if($opt=='update' && $id>0){
+                if($opt == 'update' && $id>0){
                     $info = $this->db->where('id='.$id)->find();
                     $this->info = $info ;
                 }
                 //删除
                 if($opt == 'del' && $id > 0){
                     unset($where);
-                    $where['id']=array('in',$id);
+                    $where['id'] = array('in',$id);
                     $this->db->where($where)->delete();
                     showmessage('恭喜你，删除成功！',U('Article_app_button/lists'),1);
                 }
@@ -76,8 +76,8 @@ class ArticleAppButtonController extends AdminBaseController{
     public  function save(){
         $db = M('Article_app_button');
         $id = $_POST['id'];
-        $_POST['start_time']=strtotime(I('start_time'));
-        $_POST['end_time']= strtotime(I('end_time'));
+        $_POST['start_time'] =strtotime(I('start_time'));
+        $_POST['end_time'] = strtotime(I('end_time'));
         $_POST = daddslashes($_POST);
         //处理
         if (isset($id) && $id) {
