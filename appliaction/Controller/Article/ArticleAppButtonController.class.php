@@ -6,7 +6,7 @@ class ArticleAppButtonController extends AdminBaseController{
 
     public function _initialize() {
         parent::_initialize();
-        $this->db= model('Article_app_button');
+        $this->db = model('Article_app_button');
     }
 
     public function lists(){
