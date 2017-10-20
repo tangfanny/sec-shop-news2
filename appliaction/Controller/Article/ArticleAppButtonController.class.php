@@ -122,7 +122,8 @@ class ArticleAppButtonController extends AdminBaseController{
             $butt=model('Article_app_button');
             $data['status']=array('exp',' 1-status ');;
             $butt->where('id='.$id)->save($data);
-            echo $butt->_sql();die;
+//            echo  $butt->_sql();
+//            die;
             $this->success('恭喜你，成功改变状态！'); 
         }else{
            $this->error('非法操作，请联系管理员！'); 
