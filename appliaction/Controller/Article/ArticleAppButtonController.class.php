@@ -23,11 +23,11 @@ class ArticleAppButtonController extends AdminBaseController{
             }else{
                 $order['id'] = 'DESC';
             }
-            $pagenum=isset($_POST['page']) ? intval($_POST['page']) : 1;
-            $rowsnum=isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
+            $pagenum = isset($_POST['page']) ? intval($_POST['page']) : 1;
+            $rowsnum = isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
             //计算总数
             $data['total'] = $this->db->where($sqlmap)->count();
-            $data['rows']=$this->db
+            $data['rows'] = $this->db
                 ->field(true)
                 ->where($sqlmap)
                 ->limit(($pagenum-1)*$rowsnum.','.$rowsnum)
