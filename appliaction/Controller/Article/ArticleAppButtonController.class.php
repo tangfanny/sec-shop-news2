@@ -102,8 +102,8 @@ class ArticleAppButtonController extends AdminBaseController{
      * 改变排序
      */
     public function ajax_sort(){
-        $id=intval($_GET['id']);
-        $val=  intval($_GET['val']);
+        $id = intval($_GET['id']);
+        $val =  intval($_GET['val']);
         if($id>0){
             $data['sort'] = $val;
             $this->db->where('id='.$id)->save($data);
