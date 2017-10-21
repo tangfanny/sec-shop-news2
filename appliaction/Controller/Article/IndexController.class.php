@@ -34,7 +34,7 @@ class IndexController extends HomeBaseController{
             $top_category = $this->category_db->getById($id);
         }
         extract($category);
-        $page=PAGE;
+        $page = PAGE;
         $SEO=seo(0,"文章信息");
         include template('list'); 
     }
