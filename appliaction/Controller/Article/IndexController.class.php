@@ -53,7 +53,7 @@ class IndexController extends HomeBaseController{
         $prenext['pre'] = $this->db->where($sqlmap)->order("`id` DESC")->find();
         $sqlmap['id'] = array('GT', $id);
         $prenext['next'] = $this->db->where($sqlmap)->order("`id` ASC")->find();
-        $SEO=seo(0,"文章详情信息");
+        $SEO = seo(0,"文章详情信息");
         include template('detail');
     }
 
