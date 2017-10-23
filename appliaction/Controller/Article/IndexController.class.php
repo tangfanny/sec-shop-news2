@@ -53,7 +53,7 @@ class IndexController extends HomeBaseController{
         include template('detail');
     }
 
- /* 公告详情页 */
+    /* 公告详情页 */
 	public function announce($id = '') {
 		$db = model('Announcement');
 		$id = (int) $id;
