@@ -1,8 +1,8 @@
 <?php
-/**
- * 帮助中心
- * 
- */
+    /**
+     * 帮助中心
+     *
+     */
 class IndexController extends HomeBaseController{
     public function _initialize() {
         parent::_initialize();
