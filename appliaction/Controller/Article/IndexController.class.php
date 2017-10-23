@@ -1,11 +1,7 @@
 <?php
 /**
  * 帮助中心
- *      [Haidao] (C)2013-2099 Dmibox Science and technology co., LTD.
- *      This is NOT a freeware, use is subject to license terms
- *
- *      http://www.haidao.la
- *      tel:400-600-2042
+ * 
  */
 class IndexController extends HomeBaseController{
     public function _initialize() {
