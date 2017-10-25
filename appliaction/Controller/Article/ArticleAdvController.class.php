@@ -1,7 +1,7 @@
 <?php
-/**
- * 广告列表
- */
+	/**
+	 * 广告列表
+	 */
 class ArticleAdvController extends AdminBaseController {
 
 	public function _initialize() {
