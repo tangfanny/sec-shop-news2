@@ -15,7 +15,6 @@ class ArticleAdvController extends AdminBaseController {
 		$pos_id = $_GET['pos_id'];
 		if(IS_POST){
 			$sqlmap = array();
-
 			if($pos_id){
 				$sqlmap['position_id'] = $pos_id;
 			}
