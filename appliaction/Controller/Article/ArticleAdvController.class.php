@@ -28,9 +28,9 @@ class ArticleAdvController extends AdminBaseController {
 			$pagenum=isset($_POST['page']) ? intval($_POST['page']) : 1;
 			$rowsnum=isset($_POST['rows']) && (int)($_POST['rows']) != 0 ? intval($_POST['rows']) : PAGE_SIZE;
 			$data['total'] = $this->db->where($sqlmap)->count();	//计算总数
-			$data['rows'] =$this->db
+			$data['rows'] = $this->db
 					->field(true)
-					->where($sqlmap)
+ 					->where($sqlmap)
 					->limit(($pagenum-1)*$rowsnum.','.$rowsnum)
 					->order($order)
 					->select();
@@ -41,7 +41,7 @@ class ArticleAdvController extends AdminBaseController {
 				$data["rows"][$key]["class_name"] = $this->goods_category->where(array("id"=>$value["class_id"]))->getField("name");
 			}
 			if (!$data['rows']) $data['rows']=array();
-			echo json_encode($data);
+				echo json_encode($data);
 		}else{
 			include $this->admin_tpl('article_adv_lists');
 		}
