@@ -59,8 +59,7 @@ class ArticleAdvController extends AdminBaseController {
 			self::save();
 		}else{
 			if(isset($opt) && $opt){
-
-//				//添加
+				//添加
 				if($opt=='add') {
 					$position_id = I('pos_id');
 					$adv_position=M('adv_position')->where('id='.$position_id)->Find();
