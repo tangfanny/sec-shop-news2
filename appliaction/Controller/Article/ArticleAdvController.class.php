@@ -52,8 +52,8 @@ class ArticleAdvController extends AdminBaseController {
 	 */
 	public function update(){
 		$validform = TRUE;
-		$opt=I("opt");
-		$id=I("id",0);
+		$opt = I("opt");
+		$id = I("id",0);
 		$categorylist = $this->goods_category->where("parent_id=0")->select();
 		if(IS_POST){
 			self::save();
