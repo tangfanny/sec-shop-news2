@@ -62,11 +62,11 @@ class ArticleAdvController extends AdminBaseController {
 				//添加
 				if($opt=='add') {
 					$position_id = I('pos_id');
-					$adv_position=M('adv_position')->where('id='.$position_id)->Find();
+					$adv_position = M('adv_position')->where('id='.$position_id)->Find();
 					include $this->admin_tpl('article_adv_update');
 				}
 				//编辑
-				if($opt=='edit' && $id>0){
+				if($opt == 'edit' && $id>0){
 					$map['id'] = $id;
 					$r = $this->db->getList($map);
 					$info = $r['list'][0];
