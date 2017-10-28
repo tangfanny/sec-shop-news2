@@ -76,7 +76,7 @@ class ArticleAdvController extends AdminBaseController {
 				//删除
 				if($opt == 'del' && $id ){
 					unset($where);
-					$where['id']=array('in',$id);
+					$where['id'] = array('in',$id);
 					$this->db->where($where)->delete();
 					showmessage('恭喜你，删除成功！',U('Article_adv/lists'),1);
 					exit();
@@ -91,7 +91,7 @@ class ArticleAdvController extends AdminBaseController {
 	 * 处理数据
 	 */
 	protected function save(){
-		$opt=I('opt');
+		$opt = I('opt');
 		$type=I('type',1,'intval');
 
 		if($type=='1') {
