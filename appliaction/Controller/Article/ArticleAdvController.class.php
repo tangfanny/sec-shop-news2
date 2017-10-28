@@ -103,16 +103,16 @@ class ArticleAdvController extends AdminBaseController {
 
 		}
 		if($type=='2'){
-			$content=I('text');
+			$content = I('text');
 			$_POST['link']=$_POST['tlink'];
-			$_POST["goods_name"]="";
-			$_POST["goods_id"]=0;
-			$_POST["app_url"]="";
-			$_POST["web_url"]="";
+			$_POST["goods_name"] = "";
+			$_POST["goods_id"] = 0;
+			$_POST["app_url"] = "";
+			$_POST["web_url"] = "";
 
 		}
-		if($type=='3'){
-			$content=I('code');
+		if($type == '3'){
+			$content = I('code');
 			$_POST["goods_name"]="";
 			$_POST["goods_id"]=0;
 			$_POST["app_url"]="";
