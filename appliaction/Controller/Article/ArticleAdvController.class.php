@@ -97,9 +97,9 @@ class ArticleAdvController extends AdminBaseController {
 		if($type=='1') {
 			$content = I('img');
 			$_POST['link']=$_POST['ilink'];
-			$_POST["goods_name"]="";
-			$_POST["app_url"]="";
-			$_POST["web_url"]="";
+			$_POST["goods_name"] = "";
+			$_POST["app_url"] = "";
+			$_POST["web_url"] = "";
 
 		}
 		if($type=='2'){
