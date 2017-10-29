@@ -116,7 +116,7 @@ class ArticleAdvController extends AdminBaseController {
 			$_POST["goods_name"] = "";
 			$_POST["goods_id"] = 0;
 			$_POST["app_url"] = "";
-			$_POST["web_url"]="" ;
+			$_POST["web_url"] = "" ;
 
 		}
 
