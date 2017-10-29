@@ -113,7 +113,7 @@ class ArticleAdvController extends AdminBaseController {
 		}
 		if($type == '3'){
 			$content = I('code');
-			$_POST["goods_name"]="";
+			$_POST["goods_name"] = "";
 			$_POST["goods_id"]=0;
 			$_POST["app_url"]="";
 			$_POST["web_url"]="";
